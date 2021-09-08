@@ -1,0 +1,36 @@
+{
+  "tasks": [
+    {
+      "title": "Västerås",
+      "content": "SM - fitness tävling",
+      "start": "2021-09-23T22:00:00.000Z",
+      "end": "2021-09-25T22:00:00.000Z",
+      "finish": false,
+      "id": 2
+    },
+    {
+      "title": "deadline",
+      "content": "lämna in uppgift ",
+      "start": "2021-09-09T22:00:00.000Z",
+      "end": "09/10/2021 23:00 AM",
+      "finish": true,
+      "id": 3
+    },
+    {
+      "title": "test",
+      "content": "jennes",
+      "start": "2021-09-14T22:00:00.000Z",
+      "end": "2021-09-14T22:00:00.000Z",
+      "finish": false,
+      "id": 4
+    },
+    {
+      "title": "Träna",
+      "content": "överkropp",
+      "start": "2021-09-07T22:00:00.000Z",
+      "end": "2021-09-07T22:00:00.000Z",
+      "finish": true,
+      "id": 5
+    }
+  ]
+}

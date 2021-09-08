@@ -1,0 +1,4 @@
+npm install 
+npm start 
+npm i json-server
+npm run server 
