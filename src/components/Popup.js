@@ -4,7 +4,7 @@ import AddTask from "../components/AddTask";
 
 const Popup = ({ handleClose, clickedEvent, onClicked, onDelete, onAdd }) => {
   const [modalOpen, setModalOpen] = useState(false);
-
+  console.log(clickedEvent);
   console.log("clickedEvent", clickedEvent.id);
   console.log("clickedEvent", clickedEvent.finish);
 
@@ -40,8 +40,8 @@ const Popup = ({ handleClose, clickedEvent, onClicked, onDelete, onAdd }) => {
           <h3>
             {clickedEvent.title} : {clickedEvent.content}{" "}
           </h3>
-          <p>Start: {start}</p>
-          <p>End: {end}</p>
+          <p>{start}</p>
+          <p>{end}</p>
         </div>
       </div>
       <AddTask

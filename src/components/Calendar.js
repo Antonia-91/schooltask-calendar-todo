@@ -19,6 +19,7 @@ const Calendar = ({
   onClicked,
   onDelete,
   holidays,
+  fetchTask,
 }) => {
   const [modalOpen, setModalOpen] = useState(false);
   const [title, setTitle] = useState("");
@@ -46,9 +47,9 @@ const Calendar = ({
     setModalOpen(true);
   };
 
-  // style utput in calendar
+  // style output in calendar
   function renderEventContent(tasks) {
-    console.log(tasks.event._def.extendedProps);
+   
     return (
       <div
         style={{ color: "black", cursor: "pointer" }}
@@ -59,12 +60,14 @@ const Calendar = ({
     );
   }
 
-  //stäng modal 
+
+
+  //stäng modal
   const onClose = () => {
     setModalOpen(false);
   };
 
-  // on submut, set states 
+  // on submut, set states
   const onSubmit = (e) => {
     e.preventDefault();
     onAdd({
@@ -78,8 +81,26 @@ const Calendar = ({
     onClose();
   };
 
+  // //create an object of clicket event., and send to popup component
+  // const getEvent = (tasks) => {
+  //   console.log(tasks.event._def.publicId);
+
+  //   let details = {
+  //     title: tasks.event.title,
+  //     content: tasks.event._def.extendedProps.content,
+  //     start: tasks.event._instance.range.start,
+  //     end: tasks.event._instance.range.end,
+  //     finish: tasks.event._def.extendedProps.finish,
+  //     id: tasks.event._def.publicId,
+  //   };
+
+  //   console.log(details)
+  //   setClickedEvent(details);
+  //   setIsOpen(!isOpen);
+  // };
+
   //create an object of clicket event., and send to popup component
-  const getEvent = (tasks) => {
+  const getEvent = async (tasks) => {
     console.log(tasks.event._def.publicId);
 
     let details = {
@@ -90,7 +111,11 @@ const Calendar = ({
       finish: tasks.event._def.extendedProps.finish,
       id: tasks.event._def.publicId,
     };
-    setClickedEvent(details);
+    const taskToGet = await fetchTask(tasks.event._def.publicId);
+    console.log(taskToGet);
+    //console.log(details);
+    setClickedEvent(taskToGet);
+    console.log("clickedEvent", clickedEvent);
     setIsOpen(!isOpen);
   };
 

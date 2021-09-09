@@ -16,6 +16,8 @@ function App() {
     getTasks();
   }, []);
 
+
+ 
   // FETCH TASKS
   const fetchTasks = async () => {
     const res = await fetch("http://localhost:5000/tasks");
@@ -103,6 +105,7 @@ function App() {
             fetchTasks={fetchTasks}
             onClicked={onClickedTask}
             onDelete={deleteTask}
+            fetchTask={fetchTask}
           />
         </div>
         <div className="task-container">
