@@ -8,6 +8,7 @@ const Popup = ({ handleClose, clickedEvent, onClicked, onDelete, onAdd }) => {
   console.log("clickedEvent", clickedEvent.id);
   console.log("clickedEvent", clickedEvent.finish);
 
+
   let start = moment(clickedEvent.start).format("LLLL");
   let end = moment(clickedEvent.end).format("LLLL");
 

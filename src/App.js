@@ -71,7 +71,6 @@ function App() {
   };
 
   // finish task UPDATING Server
-  useEffect(() => {}, []);
 
   const onClickedTask = async (id) => {
     const taskToUpdate = await fetchTask(id);

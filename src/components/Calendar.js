@@ -49,7 +49,6 @@ const Calendar = ({
 
   // style output in calendar
   function renderEventContent(tasks) {
-   
     return (
       <div
         style={{ color: "black", cursor: "pointer" }}
@@ -60,9 +59,7 @@ const Calendar = ({
     );
   }
 
-
-
-  //stäng modal
+  //close modal
   const onClose = () => {
     setModalOpen(false);
   };
@@ -126,16 +123,18 @@ const Calendar = ({
 
   return (
     <>
-      {isOpen && (
-        <Popup
-          getEvent={getEvent}
-          handleClose={handleClose}
-          clickedEvent={clickedEvent}
-          onClicked={onClicked}
-          onDelete={onDelete}
-          style={{ position: "relative", zIndex: 5 }}
-        />
-      )}
+      <div>
+        {isOpen && (
+          <Popup
+            getEvent={getEvent}
+            handleClose={handleClose}
+            clickedEvent={clickedEvent}
+            onClicked={onClicked}
+            onDelete={onDelete}
+            onAdd={onAdd}
+          />
+        )}
+      </div>
       <div style={{ position: "relative", zIndex: 0 }}>
         <FullCalendar
           ref={calendarRef}
