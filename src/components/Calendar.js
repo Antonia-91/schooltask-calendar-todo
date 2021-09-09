@@ -39,12 +39,14 @@ const Calendar = ({
   // };
   //addEvent={onEventAddes(holidays)}
 
+  // catch clicked date and use in and nes todo start-date
   const clickHandler = (dateClickInfo) => {
     console.log(dateClickInfo.date);
     setStart(dateClickInfo.date);
     setModalOpen(true);
   };
 
+  // style utput in calendar
   function renderEventContent(tasks) {
     console.log(tasks.event._def.extendedProps);
     return (
@@ -57,10 +59,12 @@ const Calendar = ({
     );
   }
 
+  //stäng modal 
   const onClose = () => {
     setModalOpen(false);
   };
 
+  // on submut, set states 
   const onSubmit = (e) => {
     e.preventDefault();
     onAdd({
@@ -74,8 +78,7 @@ const Calendar = ({
     onClose();
   };
 
-  //testing
-
+  //create an object of clicket event., and send to popup component
   const getEvent = (tasks) => {
     console.log(tasks.event._def.publicId);
 
@@ -91,6 +94,7 @@ const Calendar = ({
     setIsOpen(!isOpen);
   };
 
+  // close popup window
   const handleClose = () => {
     setIsOpen(!isOpen);
   };
