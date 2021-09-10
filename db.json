@@ -5,7 +5,7 @@
       "content": "SM - fitness tävling",
       "start": "2021-09-23T22:00:00.000Z",
       "end": "2021-09-25T22:00:00.000Z",
-      "finish": true,
+      "finish": false,
       "id": 2
     },
     {
@@ -23,30 +23,6 @@
       "end": "2021-09-07T22:00:00.000Z",
       "finish": false,
       "id": 5
-    },
-    {
-      "title": "ddd",
-      "content": "ddd",
-      "start": "2021-09-14T22:00:00.000Z",
-      "end": "2021-09-14T22:00:00.000Z",
-      "finish": false,
-      "id": 7
-    },
-    {
-      "title": "hhhh",
-      "content": "hhhh",
-      "start": "2021-09-07T22:00:00.000Z",
-      "end": "2021-09-07T22:00:00.000Z",
-      "finish": false,
-      "id": 8
-    },
-    {
-      "title": "nyyy",
-      "content": "nyyy",
-      "start": "2021-09-09T22:00:00.000Z",
-      "end": "2021-09-09T22:00:00.000Z",
-      "finish": false,
-      "id": 9
     }
   ]
 }
