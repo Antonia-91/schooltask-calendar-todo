@@ -33,6 +33,7 @@ const Calendar = ({
   const calendarRef = React.createRef();
 
   //////--  Calendar Callback Functions for Plugins --////////
+  
 
   // const onEventAddes = (holidays) => {
   //   let calendarApi = calendarRef.current.getApi();
@@ -78,7 +79,7 @@ const Calendar = ({
     onClose();
   };
 
-  // //create an object of clicket event., and send to popup component
+  // //create an object of clicket event., and send to popup-Modal
   // const getEvent = (tasks) => {
   //   console.log(tasks.event._def.publicId);
 
