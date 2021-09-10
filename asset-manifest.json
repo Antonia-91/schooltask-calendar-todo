@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/schooltask-calendar-todo/static/css/main.160e3bc4.chunk.css",
+    "main.js": "/schooltask-calendar-todo/static/js/main.c3582165.chunk.js",
+    "main.js.map": "/schooltask-calendar-todo/static/js/main.c3582165.chunk.js.map",
+    "runtime-main.js": "/schooltask-calendar-todo/static/js/runtime-main.6f9236b8.js",
+    "runtime-main.js.map": "/schooltask-calendar-todo/static/js/runtime-main.6f9236b8.js.map",
+    "static/css/2.8f4532ec.chunk.css": "/schooltask-calendar-todo/static/css/2.8f4532ec.chunk.css",
+    "static/js/2.1a1e6864.chunk.js": "/schooltask-calendar-todo/static/js/2.1a1e6864.chunk.js",
+    "static/js/2.1a1e6864.chunk.js.map": "/schooltask-calendar-todo/static/js/2.1a1e6864.chunk.js.map",
+    "static/js/3.07ff911b.chunk.js": "/schooltask-calendar-todo/static/js/3.07ff911b.chunk.js",
+    "static/js/3.07ff911b.chunk.js.map": "/schooltask-calendar-todo/static/js/3.07ff911b.chunk.js.map",
+    "index.html": "/schooltask-calendar-todo/index.html",
+    "static/css/2.8f4532ec.chunk.css.map": "/schooltask-calendar-todo/static/css/2.8f4532ec.chunk.css.map",
+    "static/css/main.160e3bc4.chunk.css.map": "/schooltask-calendar-todo/static/css/main.160e3bc4.chunk.css.map",
+    "static/js/2.1a1e6864.chunk.js.LICENSE.txt": "/schooltask-calendar-todo/static/js/2.1a1e6864.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6f9236b8.js",
+    "static/css/2.8f4532ec.chunk.css",
+    "static/js/2.1a1e6864.chunk.js",
+    "static/css/main.160e3bc4.chunk.css",
+    "static/js/main.c3582165.chunk.js"
+  ]
+}
